@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +15,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     SidebarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     SidebarComponent
